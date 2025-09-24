@@ -3,7 +3,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="google-site-verification" content="v8Y3iQ3XZLMqucG2SyewuJiCL340_69l6XtWNK8L91w" />
-    <meta name="baidu-site-verification" content="codeva-rpEl2hGCJm" />
     <title>Rengan Xie</title>
 
     <meta name="author" content="Rengan Xie">
@@ -84,6 +83,90 @@
             <!-- Paper list bgcolor="#ffffd0"-->
             <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
+
+                <!-- Paper fuse3d-->
+                <tr onmouseout="fuse3d_stop()" onmouseover="fuse3d_start()"  >
+                  <td style="padding:16px;width:20%;vertical-align:middle">
+                    <div class="one"  style="display: flex; align-items: center; justify-content: center; height: 100%;">
+                      <div class="two" id='fuse3d'><video  width=100% height=100% muted autoplay loop>
+                      <source src="images/25_fuse3d_mini.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video></div>
+
+                      <img src='images/25_fuse3d.png' id='fuse3d_img' width=100%>
+                    </div>
+                    <script type="text/javascript">
+                      function fuse3d_start() {
+                        document.getElementById('fuse3d').style.opacity = "1";
+                        document.getElementById('fuse3d_img').style.opacity = "0";
+                      }
+
+                      function fuse3d_stop() {
+                        document.getElementById('fuse3d').style.opacity = "0";
+                        document.getElementById('fuse3d_img').style.opacity = "1";
+                      }
+                      fuse3d_stop()
+                    </script>
+                  </td>
+                  <td style="padding:8px;width:80%;vertical-align:middle">
+                    <a href="">
+                      <span class="papertitle">Fuse3D: Generating 3D Assets Controlled by Multi-Image Fusion</span>
+                    </a>
+                    <br>
+                    Xuancheng Jin<sup>*</sup>, <strong>Rengan Xie<sup>*</sup></strong>, Wenting Zheng, Rui Wang, Yuchi Huo
+                    <br>
+                    <em>Proc. SIGGRAPH Asia</em>, 2025
+                    <!-- , (The first author is a third-year undergraduate.) -->
+                    <br>
+                    <a href="https://jinnmnm.github.io/Fuse3d.github.io/">project page</a>
+                    /
+                    arXiv
+                    <!-- <a href="">arXiv</a> -->
+                  </td>
+                </tr>
+
+                <!-- Paper AniTex-->
+                <tr onmouseout="AniTex_stop()" onmouseover="AniTex_start()"  >
+                  <td style="padding:16px;width:20%;vertical-align:middle">
+                    <div class="one"  style="display: flex; align-items: center; justify-content: center; height: 100%;">
+                      <!-- <div class="two" id='AniTex'><video  width=100% height=100% muted autoplay loop>
+                      <source src="images/25_anitex.png" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video></div> -->
+
+                      <img src='images/25_anitex.png' id='AniTex_img' width=100%>
+                    </div>
+                    <script type="text/javascript">
+                      function AniTex_start() {
+                        document.getElementById('AniTex').style.opacity = "1";
+                        document.getElementById('AniTex_img').style.opacity = "0";
+                      }
+
+                      function AniTex_stop() {
+                        document.getElementById('AniTex').style.opacity = "0";
+                        document.getElementById('AniTex_img').style.opacity = "1";
+                      }
+                      AniTex_stop()
+                    </script>
+                  </td>
+                  <td style="padding:8px;width:80%;vertical-align:middle">
+                    <a href="">
+                      <span class="papertitle">AniTex: Light-Geometry Consistent PBR Material Generation for Animatable Objects</span>
+                    </a>
+                    <br>
+                    Jieting Xu, Ziyi Xu, Guoyuan An, Yiwei Hu, <strong>Rengan Xie</strong>, Zhijian Liu, Dianbing Xi, Wenjun Song, Rui Wang, Yuchi Huo
+                    <br>
+                    <em>Proc. SIGGRAPH Asia</em>, 2025
+                    <br>
+                    project page
+                    /
+                    arXiv
+                    <!-- <a href="">arXiv</a> -->
+                  </td>
+                </tr>
+
+                
+
                 <!-- Paper 01-->
                 <tr onmouseout="artgs_stop()" onmouseover="artgs_start()"  >
                   <td style="padding:16px;width:20%;vertical-align:middle">
@@ -116,10 +199,14 @@
                     Zhiyuan Fang<sup>*</sup>, <strong>Rengan Xie<sup>*</sup></strong>, Xuancheng Jin, Qi Ye, Wei Chen, Wenting Zheng, Rui Wang, Yuchi Huo
                     <br>
                     <em>ICCV</em>, 2025
+                    <!-- , (The first author is a fourth-year undergraduate.) -->
                     <br>
-                    <a href="">project page</a>
+                    project page
                     /
-                    <a href="">arXiv</a>
+                    arXiv
+                    <!-- <a href="">project page</a>
+                    /
+                    <a href="">arXiv</a> -->
                   </td>
                 </tr>
                 <!-- Paper 02-->
@@ -155,9 +242,12 @@
                     <br>
                     <em>ICCV</em>, 2025
                     <br>
-                    <a href="">project page</a>
+                    project page
                     /
-                    <a href="">arXiv</a>
+                    arXiv
+                    <!-- <a href="">project page</a>
+                    /
+                    <a href="">arXiv</a> -->
                   </td>
                 </tr>
                 <!-- Paper 03-->
@@ -195,9 +285,9 @@
                     <br>
                     <em>Graphical Models, Volume 140, August 2025</em>
                     <br>
-                    <a href="">project page</a>
+                    <a href="https://github.com/rgxie/LDM">project page</a>
                     /
-                    <a href="">arXiv</a>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S1524070325000189?via%3Dihub">paper</a>
                   </td>
                 </tr>
 
@@ -235,9 +325,9 @@
                     <br>
                     <em>CVPR</em>, 2025
                     <br>
-                    <a href="">project page</a>
+                    <a href="https://github.com/EAST-J/Dynhor">project page</a>
                     /
-                    <a href="">arXiv</a>
+                    <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Jiang_Hand-held_Object_Reconstruction_from_RGB_Video_with_Dynamic_Interaction_CVPR_2025_paper.html">arXiv</a>
                   </td>
                 </tr>
 
@@ -275,9 +365,9 @@
                     <br>
                     <em>Computational Visual Media (CVM)</em>, 2025
                     <br>
-                    <a href="">project page</a>
-                    /
-                    <a href="">arXiv</a>
+                    <!-- <a href="">project page</a>
+                    / -->
+                    <a href="https://arxiv.org/html/2405.11270v1">arXiv</a>
                   </td>
                 </tr>
                 <!-- Paper 06-->
@@ -313,9 +403,9 @@
                     <br>
                     <em>ACM Transactions on Graphics, 43 (5), 1-22</em>, 2024
                     <br>
-                    <a href="">project page</a>
+                    <a href="https://www.youtube.com/watch?v=ch2ZK3h14Jg&t=50s">video</a>
                     /
-                    <a href="">arXiv</a>
+                    <a href="https://dl.acm.org/doi/10.1145/3678002">paper</a>
                   </td>
                 </tr>
                 <!-- Paper 07-->
@@ -351,9 +441,9 @@
                     <br>
                     <em>AAAI</em>, 2024
                     <br>
-                    <a href="">project page</a>
+                    <a href="https://east-j.github.io/ihor/">project page</a>
                     /
-                    <a href="">arXiv</a>
+                    <a href="https://arxiv.org/pdf/2312.16425">arXiv</a>
                   </td>
                 </tr>
                 <!-- Paper 08-->
@@ -389,9 +479,9 @@
                     <br>
                     <em>IEEE Transactions on Industry Applications 59 (3)</em>, 2023,&nbsp <font color="red"><strong>(CIEEC 2021 Best Paper Award)</strong></font>
                     <br>
-                    <a href="">project page</a>
+                    <!-- <a href="">project page</a>
                     /
-                    <a href="">arXiv</a>
+                    <a href="">arXiv</a> -->
                   </td>
                 </tr>
 
@@ -407,7 +497,7 @@
                   <td style="padding:0px">
                     <br>
                     <p style="text-align:right;font-size:small;">
-                     Last updated: Aug 18, 2025 <br>
+                     Last updated: Sep 18, 2025 <br>
                     Template borrowed from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
                     </p>
                   </td>
